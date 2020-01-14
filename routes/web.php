@@ -12,7 +12,5 @@
 */
 
 Route::get('/', 'HomeController@home');
-
-Route::get('/algo', 'HomeController@teste');
-
-Route::get('/algo/{id}', 'HomeController@teste2');
+Route::post('/', 'HomeController@add');
+Route::get('/delete/{id}', 'HomeController@del');
