@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'HomeController@home');
+
+Route::get('/algo', 'HomeController@teste');
+
+Route::get('/algo/{id}', 'HomeController@teste2');
